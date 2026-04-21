@@ -532,6 +532,24 @@ footer p{
   #ai-panel{width:calc(100vw - 48px);right:24px;}
   footer{flex-direction:column;gap:16px;text-align:center;}
 }
+  /* 📱 Mobile */
+@media (max-width: 768px){
+  .hero-inner{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .photo-card{
+    order: -1; /* image comes on top */
+  }
+}
+
+/* 💻 Large screens */
+@media (min-width: 1200px){
+  .hero-inner{
+    gap: 80px;
+  }
+}
 </style>
 </head>
 <body>
